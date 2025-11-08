@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="mobile-styles.css" />
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar">
+                <div class="desktop-logo">Abin</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link-items">About</a></li>
+                    <li><a href="#" class="nav-link-items">Experience</a></li>
+                    <li><a href="#" class="nav-link-items">Projects</a></li>
+                    <li><a href="#" class="nav-link-items">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-nav">
+                <div class="logo">Abin</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="menu-links">
+                        <li>
+                            <a href="#" class="mobile-link-items" onclick="toggleMenu()">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-link-items" onclick="toggleMenu()">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-link-items" onclick="toggleMenu()">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-link-items" onclick="toggleMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main></main>
+    </body>
+</html>
