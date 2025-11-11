@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="mobile-styles.css" />
         <script defer src="script.js"></script>
     </head>
-
     <body>
         <nav>
             <div class="navbar">
@@ -34,37 +33,34 @@
                             <a href="/about.html" class="mobile-link-items" onclick="toggleMenu()">About</a>
                         </li>
                         <li>
-                            <a href="/experience.html" class="mobile-link-items" onclick="toggleMenu()">Experience</a>
+                            <a href="experience.html" class="mobile-link-items" onclick="toggleMenu()">Experience</a>
                         </li>
                         <li>
-                            <a href="/projects.html" class="mobile-link-items" onclick="toggleMenu()">Projects</a>
+                            <a href="projects.html" class="mobile-link-items" onclick="toggleMenu()">Projects</a>
                         </li>
                         <li>
-                            <a href="/contact.html" class="mobile-link-items" onclick="toggleMenu()">Contact</a>
+                            <a href="contact.html" class="mobile-link-items" onclick="toggleMenu()">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <section class="hero">
-            <div class="profile-pic">
-                <img src="images/image.png" alt="profile image" class="profile-img" />
+        <section class="contact-container">
+            <div class="contact-heading">
+                <p>Get in Touch</p>
+                <h3>Contact Me</h3>
             </div>
-            <div class="personal-details">
-                <div class="section-text">
-                    <p class="section-text-p1">Hello, I'm</p>
-                    <h1>Abin MR</h1>
-                    <p class="section-text-2">Frontend Developer</p>
-                </div>
-                <div class="section-btns">
-                    <button class="btn btn-cv">Download CV</button>
-                    <button class="btn btn-contact">Contact Info</button>
-                </div>
-                <div class="socials">
-                    <a href="#"><img src="images/linkedin.png" alt="linkedin logo" /></a>
-                    <a href="#"><img src="images/github.png" alt="github logo" /></a>
-                </div>
+            <div class="contact">
+                <form class="contact-form">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" placeholder="Fullname" class="input name-input" required />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email" class="input emali-input" required />
+                    <label for="message">Message</label>
+                    <textarea rows="8" cols="60" name="message" required></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
             </div>
         </section>
     </body>
